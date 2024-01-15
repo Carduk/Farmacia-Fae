@@ -1,0 +1,24 @@
+<mat-toolbar color="primary" s>
+    <span>
+        <a routerLink="" mat-button>
+            <mat-icon>health_and_safety</mat-icon> Fae pharma
+        </a>
+        <mat-form-field appearance="outline">
+            <input matInput [(ngModel)]="busqueda" type="text" placeholder="Buscar productos:">
+            <a></a>
+            <a (click)="ir()">
+                <mat-icon matPrefix>search</mat-icon>
+            </a>
+            <a></a>
+        </mat-form-field>
+        <a routerLink="medicamentos" mat-button>
+            Ver medicamentos
+        </a>
+        <a routerLink="usuarios/crear" mat-button>
+            Registrarse
+        </a>
+        <a routerLink="usuarios/iniciar-sesion" mat-button>
+            Iniciar sesión
+        </a>
+    </span>
+</mat-toolbar>

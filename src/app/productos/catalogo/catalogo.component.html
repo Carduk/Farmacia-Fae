@@ -1,0 +1,27 @@
+<div *ngIf="!producto">
+    ERROR
+</div>
+<ng-container s>
+    <div class=medicamentos>
+        <div *ngFor="let producto  of producto; let index = index" class=medicamento>
+            <div (click)="navegar(producto.id)"  class="icon">
+                <nav>
+                    <a><img src="assets/orteoartrit.png" alt=""></a>
+                </nav>
+                <div>{{producto.nombre}}</div>
+                <div class=desc>
+                    {{producto.descripcion}}
+                </div>
+                <div>
+                    {{producto.precioReal}} <a>{{producto.descuento}}</a>
+                </div>
+                <div>
+                    <button style="margin-left: 1rem;"
+                        (click)="addi(producto.nombre, producto.id, producto.descripcion, producto.precio, producto.descuento, producto.peso, producto.tipoPeso, producto.categoria)">Añadir
+                        a la canasta
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>

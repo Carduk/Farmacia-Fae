@@ -1,0 +1,34 @@
+p {
+    color:rgb(0, 0, 0);
+    max-width: 255px;
+    height: 45px;
+    font: 15px;
+    font-weight: bold;
+}
+.medicamentos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+}
+.medicamento{
+    border: 2px solid rgb(0, 0, 0);
+    outline: 3px solid #c2185b;
+    margin-right: 2%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+img{
+    height: 55px;
+    width: 55px;
+    /*-webkit-filter: invert(1);
+    filter: invert(1);*/
+}
+.desc{
+    font-size: 8px;
+}
+a{
+    font-size: 10px;
+    color: red;
+}

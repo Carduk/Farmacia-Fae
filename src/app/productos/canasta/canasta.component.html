@@ -1,0 +1,11 @@
+<div *ngIf="producto">
+    <div *ngFor="let producto  of producto" class = contenedor_medicamentos>
+    <div>{{producto.id}} - {{producto.nombre}}</div>
+    <div>
+        {{producto.getDescripcion}}
+    </div>
+    <div>
+        {{producto.precioDescuento}}
+    </div>
+    </div>
+    </div>
