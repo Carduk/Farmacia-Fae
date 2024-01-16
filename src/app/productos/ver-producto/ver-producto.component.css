@@ -1,0 +1,11 @@
+.precio{
+    font-size: 32px;
+    color: rgb(255, 0, 179);
+    font-weight: 700;
+}
+hr.double {
+    border-top: 3px double;
+    border-bottom: none;
+    background: rgb(255, 0, 179);
+    border-color: rgb(255, 0, 179);
+   }
