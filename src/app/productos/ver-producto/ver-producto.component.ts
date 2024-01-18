@@ -20,6 +20,7 @@ export class VerProductoComponent implements OnInit {
   }
   //Con param.ID puedes sacar el numero de id, que será una herramienta que nos servirá más tarde 
   ngOnInit(): void {
+    alert("OH no, esta es una prueba")
   }
 
   p1 = new nuevo('Osteoartrit', 1, 'Medicamento para artitis, artrosis y osteoporosis', 30000, 60, 2, 'Kg', 1);
