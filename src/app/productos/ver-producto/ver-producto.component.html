@@ -1,10 +1,11 @@
-<div *ngIf="!a[pov]">
+
+<div *ngIf="!productoPorID(pov)">
     ERROR
 </div>
-<div *ngIf="a[pov]">
+<div *ngIf="productoPorID(pov)">
     <h2>{{a[pov].nombre}}</h2>
     <hr class="double">
     <a><img src="assets/orteoartrit.png" alt=""></a>
-    <div class="precio"><br> {{a[pov].precioReal}} </div>
-    <div><br> {{a[pov].descripcion}}</div>
+    <div class="precio"><br> {{productoPorID(pov).precioReal}} </div>
+    <div><br> {{productoPorID(pov).descripcion}}</div>
 </div>

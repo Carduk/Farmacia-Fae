@@ -4,6 +4,7 @@ import { ActivatedRoute, Router, RouterLink, RouterLinkActive, RouterOutlet } fr
 import { nuevo } from '../../product';
 import { productosEnCanasta } from '../canasta/canasta';
 import { MaterialModule } from '../../material/material.module';
+import { ProductosService } from '../productos.service';
 
 @Component({
   selector: 'app-catalogo',
@@ -14,7 +15,7 @@ import { MaterialModule } from '../../material/material.module';
 })
 export class CatalogoComponent implements OnInit{
   pov;
-  constructor(private route: Router){ }
+  constructor(private route: Router, private productosService: ProductosService){ }
 
   fe = 'verProducto/1';
   @Input()
